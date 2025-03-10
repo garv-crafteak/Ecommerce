@@ -50,3 +50,7 @@ body:
           required: true
         - label: "I want to work on this issue"
           required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! 👍
