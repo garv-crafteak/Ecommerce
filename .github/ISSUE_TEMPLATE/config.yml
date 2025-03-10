@@ -1,0 +1,109 @@
+name: "Bug Report"
+description: "Report a UI or functionality bug"
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 Issue Overview
+        Please provide a clear and concise description of the issue.
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: "📌 Issue Overview"
+      description: "Describe the bug clearly and concisely."
+      placeholder: "A brief summary of the issue..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 🔍 Steps to Reproduce"
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "🔍 Steps to Reproduce"
+      description: "List the steps to reproduce the issue."
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See the error
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 🎯 Expected Behavior"
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "🎯 Expected Behavior"
+      description: "What did you expect to happen?"
+      placeholder: "The task cards should..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 🚨 Actual Behavior"
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "🚨 Actual Behavior"
+      description: "What actually happened?"
+      placeholder: "The text overflows beyond..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 📷 Screenshot"
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "📷 Screenshot (if applicable)"
+      description: "Upload screenshots to help explain the issue."
+      placeholder: "Drag and drop an image or paste a link."
+
+  - type: markdown
+    attributes:
+      value: "## 💡 Suggested Improvements"
+
+  - type: textarea
+    id: suggested-improvements
+    attributes:
+      label: "💡 Suggested Improvements"
+      description: "Suggest possible fixes or UI enhancements."
+      placeholder: "Ensure text remains within..."
+      
+  - type: markdown
+    attributes:
+      value: "## 🛠️ Environment Details"
+
+  - type: input
+    id: environment
+    attributes:
+      label: "🛠️ Environment Details"
+      description: "Device, OS, Browser, and version details."
+      placeholder: "Windows 11, Chrome 105..."
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "✅ Confirmation"
+      description: "Please confirm the following before submitting:"
+      options:
+        - label: "I have checked for existing issues."
+          required: true
+        - label: "I have provided necessary details and screenshots."
+          required: true
