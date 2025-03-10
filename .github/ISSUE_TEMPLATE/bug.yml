@@ -48,12 +48,16 @@ body:
     attributes:
       label: "📷 Screenshot"
       description: "Attach screenshots if applicable."
-      
+      validations:
+        required: false
+
   - type: textarea
     attributes:
       label: "💡 Suggested Improvements"
       description: "Any ideas for a fix?"
-      
+      validations:
+        required: false
+
   - type: checkboxes
     attributes:
       label: "✅ Confirmation"
@@ -61,8 +65,11 @@ body:
         - label: "I have searched the existing issues"
           required: true
         - label: "I want to work on this issue"
-  
+          required: false
+
   - type: checkboxes
     attributes:
       label: "Record"
-      option
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
