@@ -3,15 +3,15 @@ description: "Suggest updates or improvements to the documentation"
 title: "DOCS UPDATE:"
 labels: ["Documentation"]
 body:
-   - type: dropdown
+  - type: single-select
     attributes:
-      label: "Type of documentation update"
-      description: "Is this related to existing documentation or a new addition?"
+      label: "Is this related to an existing part of the documentation?"
+      description: "Please confirm if your suggestion is related to an existing section of the documentation."
       options:
-        - "Update to existing documentation"
-        - "New addition to documentation"
-    validations:
-      required: true
+        - "Yes, it is related to an existing section"
+        - "No, it's a new addition to the documentation"
+      validations:
+        required: true
   - type: markdown
     attributes:
       value: |
