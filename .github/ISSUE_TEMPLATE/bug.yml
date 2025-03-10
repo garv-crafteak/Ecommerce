@@ -1,0 +1,68 @@
+name: "🐞 Bug Report"
+description: "Create a report to help us improve"
+title: "BUG:"
+labels: ["Bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: "Is there an existing issue for this?"
+      description: "Please search to see if an issue already exists for the bug you encountered."
+      options:
+        - label: "I have searched the existing issues"
+          required: true
+
+  - type: textarea
+    attributes:
+      label: "What happened?"
+      description: "A concise description of what you're experiencing."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "🔍 Steps to Reproduce"
+      description: "List the steps to reproduce the issue."
+      value: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See the error  
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "🎯 Expected Behavior"
+      description: "What should happen instead?"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "🚨 Actual Behavior"
+      description: "What actually happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "📷 Screenshot"
+      description: "Attach screenshots if applicable."
+      
+  - type: textarea
+    attributes:
+      label: "💡 Suggested Improvements"
+      description: "Any ideas for a fix?"
+      
+  - type: checkboxes
+    attributes:
+      label: "✅ Confirmation"
+      options:
+        - label: "I have searched the existing issues"
+          required: true
+        - label: "I want to work on this issue"
+  
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      option
