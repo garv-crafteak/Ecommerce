@@ -13,7 +13,27 @@ body:
   - type: textarea
     attributes:
       label: "What happened?"
-      description: "A concise description of what you're experiencing."
+      description: "Please provide a detailed description of the issue, including the following information:"
+      value: |
+        ### Issue Description
+        [Provide a clear and concise description of the bug]
+
+        ### Expected Behavior
+        [Describe what you expected to happen]
+
+        ### Actual Behavior
+        [Describe what actually happened]
+
+        ### Steps to Reproduce
+        1. [First Step]
+        2. [Second Step]
+        3. [and so on...]
+
+        ### Screenshots
+        [If applicable, add screenshots to help explain your problem. You can drag and drop images directly into this text area.]
+
+        ### Additional Context
+        [Add any other context about the problem here, such as browser version, operating system, etc.]
     validations:
       required: true
   - type: checkboxes
