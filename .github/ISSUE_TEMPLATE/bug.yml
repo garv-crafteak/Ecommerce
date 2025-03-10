@@ -40,8 +40,13 @@ body:
 
         ## 💡 Suggested Improvements  
         <!-- Any ideas for a fix? -->
-    validations:
-      required: true
+  - type: input
+    attributes:
+      label: "Collaborator Name (if any)"
+      description: "If you collaborated with someone on this issue, please provide their name or GitHub username."
+      placeholder: "e.g., @username or Full Name"
+      validations:
+        required: false
   - type: checkboxes
     attributes:
       label: "Record"
