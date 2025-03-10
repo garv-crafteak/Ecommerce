@@ -10,30 +10,36 @@ body:
       options:
         - label: "I have searched the existing issues"
           required: true
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > Before posting, remove sensitive data, such as passwords, secret keys, session cookies, etc.
   - type: textarea
     attributes:
       label: "What happened?"
       description: "Please provide a detailed description of the issue, including the following information:"
       value: |
-        ### Issue Description
-        [Provide a clear and concise description of the bug]
+        ## 📌 Issue Overview  
+        <!-- Provide a brief summary of the issue -->
 
-        ### Expected Behavior
-        [Describe what you expected to happen]
+        ## 🔍 Steps to Reproduce  
+        1. Go to '...'  
+        2. Click on '...'  
+        3. Scroll down to '...'  
+        4. See the error  
 
-        ### Actual Behavior
-        [Describe what actually happened]
+        ## 🎯 Expected Behavior  
+        <!-- What should happen? -->
 
-        ### Steps to Reproduce
-        1. [First Step]
-        2. [Second Step]
-        3. [and so on...]
+        ## 🚨 Actual Behavior  
+        <!-- What actually happened? -->
 
-        ### Screenshots
-        [If applicable, add screenshots to help explain your problem. You can drag and drop images directly into this text area.]
+        ## 📷 Screenshot  
+        <!-- Attach screenshots if applicable -->
 
-        ### Additional Context
-        [Add any other context about the problem here, such as browser version, operating system, etc.]
+        ## 💡 Suggested Improvements  
+        <!-- Any ideas for a fix? -->
     validations:
       required: true
   - type: checkboxes
@@ -42,3 +48,5 @@ body:
       options:
         - label: "I agree to follow this project's Code of Conduct"
           required: true
+        - label: "I want to work on this issue"
+          required: false
